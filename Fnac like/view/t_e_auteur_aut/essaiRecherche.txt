@@ -1,0 +1,7 @@
+<?php
+		foreach($data as $t_e_auteur_aut) {
+				echo "<option value=".$t_e_auteur_aut->aut_id.">";
+				echo $t_e_auteur_aut->aut_nom;
+				echo "</option>";
+			}
+	?>

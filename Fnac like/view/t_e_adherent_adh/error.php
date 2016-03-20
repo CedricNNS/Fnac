@@ -1,0 +1,1 @@
+<div id="error">Cette adresse mail ou ce numéro de téléphone existe déjà. </div>

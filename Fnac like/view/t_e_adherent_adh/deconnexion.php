@@ -1,0 +1,1 @@
+<p>Merci de votre visite.</p>

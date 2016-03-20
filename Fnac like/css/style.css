@@ -1,0 +1,304 @@
+* { margin: 0px; padding:0px; position: relative; }
+
+body {
+	background-color: white;
+	font-family: sans-serif, arial;
+}
+header {
+	padding: 10px;
+	border-bottom: solid 1px #888888;
+	/*background-color:#D8D8D8;*/
+	background-color:#181818 ;
+}
+
+
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: orange;
+	transition: all 0.5s ease;
+}
+a:hover {
+	border-bottom: dotted 1px orange;
+}
+
+nav li {
+	list-style-type: none;
+}
+nav a:link, nav a:visited{
+	display: block;
+	padding: 10px;
+	border: none;
+}
+nav a:hover  {
+	border: none;
+	background-color: orange;
+	color: white;	
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  /*  margin-bottom:80px;*/
+}
+
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+    width:180px;
+    text-align:center;
+}
+
+
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+}
+#menu-deroulant ul {
+	position:absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+#recherche{
+	cursor:default;
+}
+#rech:hover{
+	margin-bottom:100px;
+}
+
+section {
+	padding: 10px;
+	min-height: 500px;
+}
+section table {
+	margin: 20px;
+	border-collapse: collapse;
+}
+section td {
+	border-bottom: solid 1px #888888;
+	padding: 10px;
+}
+section p {
+	margin: 20px;
+}
+
+footer {
+	border-top: solid 1px #888888;
+	padding: 20px;
+	font-size: 0.8em;
+	text-align:center;
+}
+
+label{
+    display: block; 
+	width: 180px;
+    float: left;
+	margin-right:5px;
+}
+
+input[type="submit"]{
+	width:auto;
+}
+
+input{
+	width:150px;
+}
+
+#compte{
+	padding-top: 20px;
+	display: inline-block;
+}
+
+#modifierCompte, #gererAdresse{
+	margin-left: 15px;
+	margin-right: 25px;
+}
+
+#lienInscription, #modifierCompte, #lienConnection{
+	margin-left : 10px;
+}
+
+#nomAu{
+	width:200px;
+}
+
+.div{
+//	background-color: rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover{
+	color: #FF9100;
+	text-decoration: none;
+	cursor:pointer;
+	background-color: transparent;
+	border: 1px solid #FF9100;
+	border-radius: 3px;
+}
+
+
+input[type="submit"]{
+	color: white;
+	text-decoration: none;
+	padding: 1px 5px;
+	background-color: #FF9100;
+	border: 1px solid #FF9100;
+	border-radius: 3px;
+	transition: all 0.5s ease 0s;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#logo{
+	height:50px;
+	width:50px;
+}
+
+h1{
+	font-size:60px;
+	color:#FF9100;
+}
+
+#Titre,#Titre:hover{
+	margin-left:10px;
+	border-bottom:none;
+}
+
+
+.div{
+	width:auto;
+	height:auto;
+	padding:25px;
+	border-radius:4px;
+	background-color: rgba(50, 50, 50, 0.3); 	
+}
+
+#lienDeconnection{
+	position:absolute;
+	top : 45px;
+	right:20px;
+	border:2px solid #FF9100;
+	border-radius: 3px;
+	padding:3px;
+}
+
+#lienDeconnection:hover{
+	box-shadow: 0 0 6px #676663 inset, 0 0 2px #676663 inset, 0 0 10px #b6a684;
+}
+
+#hello{
+	position:absolute;
+	top:20px;
+	right: 20px;
+	color:white;
+}
+
+img{
+	width:80px;
+	height:100px;
+}
+
+#error{
+	font-weight:bold;
+	color:red;
+}
+
+#valide{
+	font-weight:bold;
+	color:green;
+}
+
+#Photodescr{
+	width:200px;
+	height:280px;
+}
+
+#photo{
+	display:inline-block;
+	width:auto;
+}
+
+#cote{
+	position:absolute;
+	left:250px;
+	top:50px;
+}
+
+#etoile {
+   color: orange;
+}
+
+#etoileGrise{
+	color:#909090;
+}
+.rating{
+	float: right;
+   text-decoration: none;
+   font-size: 1.5em;
+   transition: color .4s;
+}
+
+.miseEnForme{
+	font-weight:bold;
+}
+
+#resume{
+	font-style: italic;
+}
+
+
+
+#relais{
+	display:inline-block;
+	padding-left:30px;
+	padding-right:100px;
+	padding-top:5px;
+	padding-bottom:55px;
+	margin:10px;
+	border:solid 1px black;
+	border-radius:4px;
+	background-color: rgba(50, 50, 50, 0.1); 	
+}
+
+.button{
+	margin-top:50px;
+	text-align:center;
+}
+
+#adresse{
+	display:inline-block;
+	padding-left:30px;
+	padding-right:100px;
+	padding-top:5px;
+	padding-bottom:55px;
+	margin:10px;
+	border:solid 1px black;
+	border-radius:4px;
+	background-color: rgba(50, 50, 50, 0.1); 	
+}
+
+#BandeauNews {
+	width: 220px;
+}
+
+
+#turnRight {
+	width: 50px;
+	height: 50px;
+}
+
+#turnLeft {
+	width: 50px;
+	height: 50px;
+}
